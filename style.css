@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: monospace;
+    background-color: black;
+    color: #1fcaca;
+    margin: 20px;
+    font-size: 16px;
+}
+
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+
+.calculator{
+    background-color: #450251;
+    box-shadow: 0px 0px 3px 3px rgba(196, 179, 179, 0.8);
+    max-width: 450px;
+    border: 3px solid #7cb9ef;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+input {
+    padding: 8px;
+    font-size: 1rem;
+}
+
+#repayment, #repayment2, #repayment3{
+    width: 120px;
+}
+
+#term, #years2, #int-rate2, #int-rate3 {
+    width: 75px;
+
+}
+
+#mortgage2, #mortgage3{
+    width: 160px;
+}
+
+.result {
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px;
+    margin-top: 15px;
+    background-color: rgb(24, 199, 144);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+.explanation{
+    font-size: 0.8rem;
+    max-width: 97%;
+    opacity: 0.7;
+}
+
+table{
+    width: 99%;
+    font-family: monospace;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+th, td {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 12px 16px;
+}
+
+th {
+    background-color: #36013f;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+td {
+    color: #1fcaca;
+}
+
+tr:nth-child(even) td{
+    background-color: #1a1a1a;
+}
+
+tr:hover td {
+    background-color: #292929;
+}
+
+@media (min-width: 768px){
+    
+    body {
+        font-size: 22px;
+        padding: 20px;
+    }
+
+    .calculator {
+        max-width: 600px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1280px){
+
+    #main-container {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .calculator {
+        min-width: 320px;
+        max-width: 500px;
+        margin: 0 20px;
+    }
+
+    #calculator3 {
+        min-width: 380px;
+    }
+}
