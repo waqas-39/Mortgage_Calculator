@@ -1,0 +1,23 @@
+{
+  "name": "mortgage_calculator",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "dev": "esbuild --bundle src/index.ts --outdir=dist --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waqas-39/Mortgage_Calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/waqas-39/Mortgage_Calculator/issues"
+  },
+  "homepage": "https://github.com/waqas-39/Mortgage_Calculator#readme",
+  "description": "",
+  "devDependencies": {
+    "esbuild": "^0.25.5",
+    "typescript": "5.8.3"
+  }
+}

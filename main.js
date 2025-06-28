@@ -72,7 +72,7 @@ function CalculateRemainder(){
 
     const calculationDiv2 = document.getElementById("remainingMortgage");
     const output = document.createElement("h3");
-    output.textContent = 'Remaining Mortgage = $' + formattedRemainder;
+    output.textContent = 'Remaining Mortgage after ' + years + ' years = $' + formattedRemainder;
     calculationDiv2.appendChild(output);
 }
 

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Mortgage Calculator</title>
+</head>
+<body>
+    <h1>MORTGAGE CALCULATOR</h1>
+    <div id="main-container">
+        <div id="calculator1" class="calculator">
+            <h2>Lifetime Total</h2>
+            <p class = "explanation">This calculates how much you'll pay in total if you only do the minimum repayments!</p>
+            <form>
+                <div id="repayments-container" class="input-group">
+                <label for="repayment">Repayment per Month ($): </label>
+                <input type="number" id="repayment" name="repayment">
+                </div>
+                <div id="term-container" class="input-group">
+                <label for="term">Term (years): </label>
+                <input type="number" id="term" name="term">
+                </div>
+            </form>
+                <button type="button" onclick="CalculateTotal()">Calculate Total</button>
+                <div id="totalMortgage" class="result"></div>
+        </div>
+
+        <div id="calculator2" class="calculator">
+            <h2>Remaining Mortgage</h2>
+            <p class = "explanation">This calculates your remaining mortgage after however many number of years you enter. It is based on your current repayments and interest rate.</p>
+            <form>
+                <div id="mortgage-container2" class="input-group">
+                <label for="mortgage2">Current Mortgage Remaining ($):</label>
+                <input type="number" id="mortgage2" name="mortgage2">
+                </div>
+                <div id="repayments-container2" class="input-group">
+                <label for="repayment2">Repayment per Month ($): </label>
+                <input type="number" id="repayment2" name="repayment2">
+                </div>
+                <div id="int-rate-container2" class="input-group">
+                <label for="int-rate2">Annual Interest Rate (%): </label>
+                <input type="number" id="int-rate2" name="int-rate2">
+                </div>
+                 <div id="years-container2" class="input-group">
+                <label for="years2">Number of Years: </label>
+                <input type="number" id="years2" name="years2">
+                </div>
+            </form>
+                <button type="button" onclick="CalculateRemainder()">Calculate Remainder</button>
+                <div id="remainingMortgage" class="result"></div>
+        </div>
+
+            <div id="calculator3" class="calculator">
+            <h2>Remaining Time</h2>
+            <p class = "explanation">This calculates how much time is left for you to pay off your mortgage. It is based on your current repayments and interest rate.</p>
+            <form>
+                <div id="mortgage-container3" class="input-group">
+                <label for="mortgage3">Current Mortgage Remaining ($):</label>
+                <input type="number" id="mortgage3" name="mortgage3">
+                </div>
+                <div id="repayments-container3" class="input-group">
+                <label for="repayment3">Repayment per Month ($): </label>
+                <input type="number" id="repayment3" name="repayment3">
+                </div>
+                <div id="int-rate-container3" class="input-group">
+                <label for="int-rate3">Annual Interest Rate (%): </label>
+                <input type="number" id="int-rate3" name="int-rate3">
+                </div>
+            </form>
+                <button type="button" onclick="CalculateTime()">Calculate Time</button>
+                <div id="remainingTime" class="result"></div>
+                <div id="mortgageTable"></div>
+        </div>
+    </div>
+     <script src="dist/index.js"></script>
+</body>
+</html>
